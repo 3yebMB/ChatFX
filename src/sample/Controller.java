@@ -12,6 +12,7 @@ import java.util.Date;
 import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
 
 public class Controller {
+
     @FXML
     TextArea textArea;
 
@@ -22,7 +23,6 @@ public class Controller {
     Button btn;
 
     DateFormat dateFormat = new SimpleDateFormat("dd.MM.yy HH:mm:ss ");
-
 
     public void sendMsg() {
         if (textField.getText().length()!=0) {

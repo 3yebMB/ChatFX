@@ -6,21 +6,26 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<?scenebuilder-stylesheet /css/JMetroDarkTheme.css?>
+<?scenebuilder-stylesheet /css/Styles.css?>
 
 <VBox alignment="center" prefHeight="516.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-    <stylesheets><URL value="@/css/JMetroDarkTheme.css" /> </stylesheets>
+    <stylesheets><URL value="@/css/Styles.css" /> </stylesheets>
    <HBox prefHeight="428.0" prefWidth="652.0">
       <children>
           <TextArea fx:id="textArea" editable="false" prefHeight="420.0" prefWidth="537.0" wrapText="true" />
          <VBox prefHeight="405.0" prefWidth="114.0">
             <children>
-               <ImageView fitHeight="115.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" />
+               <ImageView fitHeight="115.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../img/avatar.png" />
+                  </image>
+               </ImageView>
                <Label text=" Ваш ник:" />
-               <TextField />
+               <TextField promptText="Введите свой ник" />
                <TextArea editable="false" prefHeight="386.0" prefWidth="114.0" />
             </children>
          </VBox>
@@ -42,11 +47,21 @@
             </graphic></ToggleButton>
          <ToggleButton mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
             <graphic>
-               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../img/setting.png" />
+                  </image></ImageView>
             </graphic></ToggleButton>
       </children></HBox>
     <HBox prefHeight="50.0" prefWidth="400.0">
         <TextField fx:id="textField" onAction="#sendMsg" prefHeight="51.0" prefWidth="609.0" promptText="Введите сообщение.." HBox.hgrow="ALWAYS" />
-        <Button fx:id="btn" onAction="#sendMsg" prefHeight="50.0" prefWidth="85.0" text="Send" />
+        <Button fx:id="btn" defaultButton="true" onAction="#sendMsg" prefHeight="50.0" prefWidth="85.0" style="-fx-border-color: #cfcfcf;">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/send.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
     </HBox>
 </VBox>

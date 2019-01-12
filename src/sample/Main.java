@@ -13,6 +13,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Network chat FX");
         primaryStage.setScene(new Scene(root, 654, 518));
+        primaryStage.centerOnScreen();
         primaryStage.show();
     }
 
