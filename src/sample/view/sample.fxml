@@ -13,7 +13,8 @@
 <?import javafx.scene.web.WebView?>
 <?scenebuilder-stylesheet /css/Styles.css?>
 
-<VBox alignment="center" prefHeight="516.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<VBox alignment="center" prefHeight="516.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.controllers.Controller">
     <stylesheets><URL value="@/css/Styles.css" /> </stylesheets>
    <HBox prefHeight="428.0" prefWidth="652.0">
       <children>
@@ -22,7 +23,7 @@
             <children>
                <ImageView fitHeight="115.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
                   <image>
-                     <Image url="@../img/avatar.png" />
+                     <Image url="@../../img/avatar.png" />
                   </image>
                </ImageView>
                <Label text=" Ваш ник:" />
@@ -50,7 +51,7 @@
             <graphic>
                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                   <image>
-                     <Image url="@../img/setting.png" />
+                     <Image url="@../../img/setting.png" />
                   </image></ImageView>
             </graphic>
          </Button>
@@ -61,7 +62,7 @@
          <graphic>
             <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/send.png" />
+                  <Image url="@../../img/send.png" />
                </image>
             </ImageView>
          </graphic></Button>
