@@ -45,8 +45,14 @@ public class Controller {
                     "<title>Заголовок страницы</title>\n" +
                     "</head>\n" +
                     "  <body>\n" +
-                    "    <h2><img src=\"orange.jpg\" alt=\"..\"img\"avatar.png\" width=\"50\" height=\"50\">"+dateFormat.format(date)+" никнейм</h2>\n" +
-                    "    <p>    "+textField.getText()+"</p>\n" +
+                    "    <div align=\"right\">" +
+                    //<img src="URL" alt="альтернативный текст">
+
+                    "       <h2><img src=\"..\\img\\avatar.png\" width=\"50\" height=\"50\">"+dateFormat.format(date)+" никнейм</h2>\n" +
+                    "    </div>" +
+                    "    <div align=\"right\">" +
+                    "       <p>"+textField.getText()+"</p>\n" +
+                    "    </div>" +
                     "  </body>\n" +
                     "</html>";
             webEngine.loadContent(path);
