@@ -26,7 +26,7 @@
                   </image>
                </ImageView>
                <Label text=" Ваш ник:" />
-               <TextField promptText="Введите свой ник" />
+               <TextField fx:id="nickName" promptText="Введите свой ник" />
                <TextArea editable="false" prefHeight="386.0" prefWidth="114.0" />
             </children>
          </VBox>

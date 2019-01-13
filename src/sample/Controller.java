@@ -24,6 +24,9 @@ public class Controller {
     TextField textField;
 
     @FXML
+    TextField nickName;
+
+    @FXML
     Button btn;
 
     DateFormat dateFormat = new SimpleDateFormat("dd.MM.yy HH:mm:ss ");
@@ -48,7 +51,7 @@ public class Controller {
                     "    <div align=\"right\">" +
                     //<img src="URL" alt="альтернативный текст">
 
-                    "       <h2><img src=\"..\\img\\avatar.png\" width=\"50\" height=\"50\">"+dateFormat.format(date)+" никнейм</h2>\n" +
+                    "       <h2><img src=\"..\\img\\avatar.png\" width=\"50\" height=\"50\">"+dateFormat.format(date)+ nickName.getText()+"</h2>\n" +
                     "    </div>" +
                     "    <div align=\"right\">" +
                     "       <p>"+textField.getText()+"</p>\n" +
