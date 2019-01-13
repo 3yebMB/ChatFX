@@ -34,25 +34,26 @@
    </HBox>
    <HBox prefHeight="38.0" prefWidth="652.0">
       <children>
-         <ToggleButton mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+         <ToggleButton mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="[/b]">
             <graphic>
-               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               <ImageView disable="true" fitHeight="30.0" fitWidth="30.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" />
             </graphic></ToggleButton>
-         <ToggleButton mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+         <ToggleButton mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="[/i]">
             <graphic>
-               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               <ImageView disable="true" fitHeight="30.0" fitWidth="30.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" />
             </graphic></ToggleButton>
-         <ToggleButton mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+         <ToggleButton mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="[/s]">
             <graphic>
-               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+               <ImageView disable="true" fitHeight="30.0" fitWidth="30.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" />
             </graphic></ToggleButton>
-         <ToggleButton mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+         <Button mnemonicParsing="false">
             <graphic>
                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                   <image>
                      <Image url="@../img/setting.png" />
                   </image></ImageView>
-            </graphic></ToggleButton>
+            </graphic>
+         </Button>
       </children></HBox>
     <HBox prefHeight="50.0" prefWidth="400.0">
         <TextField fx:id="textField" onAction="#sendMsg" prefHeight="51.0" prefWidth="609.0" promptText="Введите сообщение.." HBox.hgrow="ALWAYS" />
