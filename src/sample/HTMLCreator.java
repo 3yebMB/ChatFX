@@ -9,6 +9,11 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
 
+/**
+ *
+ *  создание нового html файла
+ */
+
 public class HTMLCreator {
 //    String encoding = "UTF-8";
 //    FileOutputStream fos = new FileOutputStream("myfile.html");
